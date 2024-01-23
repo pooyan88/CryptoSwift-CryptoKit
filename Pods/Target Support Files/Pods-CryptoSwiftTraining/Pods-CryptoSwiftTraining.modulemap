@@ -1,0 +1,6 @@
+framework module Pods_CryptoSwiftTraining {
+  umbrella header "Pods-CryptoSwiftTraining-umbrella.h"
+
+  export *
+  module * { export * }
+}

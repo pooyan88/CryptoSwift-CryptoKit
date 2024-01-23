@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		375919F875DE6D1A69BF334B /* Pods_CryptoSwiftTraining.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FEA625EEAA1138EFE82DE8C /* Pods_CryptoSwiftTraining.framework */; };
 		E0E7ABDC2B5D2161003E35B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E7ABDB2B5D2161003E35B6 /* AppDelegate.swift */; };
 		E0E7ABDE2B5D2161003E35B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E7ABDD2B5D2161003E35B6 /* SceneDelegate.swift */; };
 		E0E7ABE02B5D2161003E35B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E7ABDF2B5D2161003E35B6 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7FEA625EEAA1138EFE82DE8C /* Pods_CryptoSwiftTraining.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoSwiftTraining.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B18C6DAE4D3FBEC372418A65 /* Pods-CryptoSwiftTraining.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoSwiftTraining.release.xcconfig"; path = "Target Support Files/Pods-CryptoSwiftTraining/Pods-CryptoSwiftTraining.release.xcconfig"; sourceTree = "<group>"; };
 		E0E7ABD82B5D2161003E35B6 /* CryptoSwiftTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoSwiftTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0E7ABDB2B5D2161003E35B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0E7ABDD2B5D2161003E35B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		E0E7ABE42B5D2162003E35B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0E7ABE72B5D2162003E35B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0E7ABE92B5D2162003E35B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E96A5C99A8DE84640B775983 /* Pods-CryptoSwiftTraining.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoSwiftTraining.debug.xcconfig"; path = "Target Support Files/Pods-CryptoSwiftTraining/Pods-CryptoSwiftTraining.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				375919F875DE6D1A69BF334B /* Pods_CryptoSwiftTraining.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E648B76C51103EE7C272675 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E96A5C99A8DE84640B775983 /* Pods-CryptoSwiftTraining.debug.xcconfig */,
+				B18C6DAE4D3FBEC372418A65 /* Pods-CryptoSwiftTraining.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		24C0E1164852E2F5602E55CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FEA625EEAA1138EFE82DE8C /* Pods_CryptoSwiftTraining.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E0E7ABCF2B5D2161003E35B6 = {
 			isa = PBXGroup;
 			children = (
 				E0E7ABDA2B5D2161003E35B6 /* CryptoSwiftTraining */,
 				E0E7ABD92B5D2161003E35B6 /* Products */,
+				1E648B76C51103EE7C272675 /* Pods */,
+				24C0E1164852E2F5602E55CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0E7ABEC2B5D2162003E35B6 /* Build configuration list for PBXNativeTarget "CryptoSwiftTraining" */;
 			buildPhases = (
+				0D68AAF8D1FAE680C682F46F /* [CP] Check Pods Manifest.lock */,
 				E0E7ABD42B5D2161003E35B6 /* Sources */,
 				E0E7ABD52B5D2161003E35B6 /* Frameworks */,
 				E0E7ABD62B5D2161003E35B6 /* Resources */,
+				EF045FBCB006115C4969AF51 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D68AAF8D1FAE680C682F46F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CryptoSwiftTraining-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF045FBCB006115C4969AF51 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoSwiftTraining/Pods-CryptoSwiftTraining-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoSwiftTraining/Pods-CryptoSwiftTraining-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CryptoSwiftTraining/Pods-CryptoSwiftTraining-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E0E7ABD42B5D2161003E35B6 /* Sources */ = {
@@ -287,12 +355,14 @@
 		};
 		E0E7ABED2B5D2162003E35B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E96A5C99A8DE84640B775983 /* Pods-CryptoSwiftTraining.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NA979M4P72;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CryptoSwiftTraining/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -315,12 +385,14 @@
 		};
 		E0E7ABEE2B5D2162003E35B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B18C6DAE4D3FBEC372418A65 /* Pods-CryptoSwiftTraining.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NA979M4P72;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CryptoSwiftTraining/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
